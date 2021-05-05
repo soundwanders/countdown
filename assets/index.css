@@ -1,0 +1,67 @@
+/*
+Avalanche blue #2596be;
+Avalanche maroon #6f253c;
+*/
+
+
+@font-face {
+    font-family: "DSEG7-Classic-Regular";
+    src: url(fonts/DSEG7-Classic/DSEG7Classic-Regular.woff);
+    }
+    
+    @font-face {
+    font-family: "DSEG7-Classic-Bold";
+    src: url(fonts/DSEG7Classic-Bold.woff);
+    }
+    
+    body {
+        overflow: hidden;
+        background: url(concrete_seamless.png);
+        z-index: -1000;
+    }
+    
+    h1 {
+        display: block;
+        color: #2596be;
+        text-align: center;
+        font-size: 48px;
+        letter-spacing: 1px;
+    }
+    
+    span {
+        position: relative;
+        display: flex;
+        width: 15rem;
+        height: auto;
+        top: 30vh;
+        justify-content: center;
+        background-color: #2596be;
+        color: #6f253c;
+        border: 2px solid #2596be;
+        font-size: 64px;
+        font-family: DSEG7-Classic-Bold, Arial, Helvetica, sans-serif;
+    }
+    
+    #logoContainer {
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 60%;
+        top: 10rem;
+        opacity: 80%;
+        z-index: -10;
+        transform: scale(1.1);
+    
+        background-image: url(avalanche.svg);
+        background-attachment: fixed;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    
+    #clockContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+    }

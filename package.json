@@ -1,0 +1,33 @@
+{
+  "dependencies": {
+    "dseg": "^0.46.0"
+  },
+  "name": "countdown",
+  "description": "Countdown to the NHL Playoffs. Go Avs!",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/soundwanders/countdown.git"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "javascript",
+    "countdown",
+    "nhl",
+    "playoffs",
+    "colorado",
+    "avalanche"
+  ],
+  "author": "soundwanders",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/soundwanders/countdown/issues"
+  },
+  "homepage": "https://github.com/soundwanders/countdown#readme"
+}
