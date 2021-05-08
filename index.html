@@ -8,32 +8,42 @@
     <meta name="author" content="soundwanders">
     <meta name="description" content="Counting down to the start of the NHL Playoffs for the Colorado Avalanche.">
 
+    <link rel="icon" type="image/png" href="assets/favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/ico" href="assets/favicon/favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@500&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="assets/index.css"></script>
+
 </head>
-<title>NHL Playoffs Countdown</title>
+<title>Countdown to NHL Playoffs</title>
 
 <header>
 
 </header>
 
 <body>
+<div id="clockWrapper">
+    <div id="logoContainer"></div>
+    <h1 id="headline">Countdown to NHL Playoffs</h1>
 
-<div id="logoContainer"></div>
-<h1 id="headline">NHL Playoffs Countdown</h1>
+    <div class="grid-container" id="clockContainer">
+        <span class="clock" id="days"></span>
+        <span class="clock" id="hours"></span>
+        <span class="clock" id="minutes"></span>
+        <span class="clock" id="seconds"></span>
+    </div>
 
-<div class="flexbox" id="clockContainer">
-    <span class="clock" id="days"></span>
-    <span class="clock" id="hours"></span>
-    <span class="clock" id="minutes"></span>
-    <span class="clock" id="seconds"></span>
 </div>
 
+<div id="cup"></div>
+<div id="hockeyVector"></div>
 
 <script src="assets/index.js"></script>
 </body>
 
-<footer>
 
-</footer>
 
 </html>

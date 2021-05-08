@@ -1,2 +1,2 @@
-# countdown
-Countdown to the NHL Playoffs. Go Avs!
+# Countdown to the NHL Playoffs.
+Go Avs!
