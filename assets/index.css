@@ -5,11 +5,6 @@ Avalanche maroon #6f253c;
 
 
 @font-face {
-font-family: "DSEG7-Classic-Regular";
-src: url(fonts/DSEG7-Classic/DSEG7Classic-Regular.woff);
-}
-
-@font-face {
 font-family: "DSEG7-Classic-Bold";
 src: url(fonts/DSEG7Classic-Bold.woff);
 }
@@ -33,14 +28,16 @@ body {
 
 h1 {
     display: block;
-    grid-row-start: auto;
     color: #2596be;
     margin: 0 auto;
-    font-family: 'Oxanium', 'Staatliches ', cursive;
-    letter-spacing: 2px;
-    font-size: 60px;
+    font-family: 'Open Sans', 'Helvetica', sans-serif;
+    letter-spacing: 1rem;
+    font-size: 55px;
+    opacity: 40%;
     text-align: center;
     letter-spacing: 1px;
+    border: none;
+    outline: none;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
 }
@@ -62,21 +59,56 @@ h1 {
     margin: 0 1rem;
     padding: 10px 15px;
     left: 30%;
-    background-color: rgba(110, 170, 250, 0.2);
-    color: #6f253c;
+    background-color: rgba(110, 170, 250, 0.1);
+    color: #720000;
     font-size: 32px;
     font-family: DSEG7-Classic-Bold, Arial, Helvetica, sans-serif;
     text-align: center;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
-    
-    border: 1px double rgba(110, 170, 250, 0.5);
-    border-right: none;
-    box-shadow: 0 0 5px #143b91;
-    border-radius: 15px;
+    border: 1px solid rgba(110, 170, 250, 0.5);
+    box-shadow: 0 0 2px #143b91;
+    border-radius: 5px;
     outline: none;
     z-index: 12;
 }
+
+.labels {
+    display: flexbox;
+    position: relative;
+    min-width: 15%;
+    height: auto;
+    top: 5rem;
+    margin-right: 3rem;
+    padding: 0;
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+    font-family: monospace;
+    text-align: center;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    background-color: none;
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+#labelDays {
+    left: 27.5rem;
+}
+
+#labelHours {
+    left: 28.5rem;
+}
+
+#labelMinutes {
+    left: 29rem;
+}
+
+#labelSeconds {
+    left: 29.5rem;
+}
+
 
 #logoContainer {
     position: absolute;
@@ -89,7 +121,7 @@ h1 {
     background-attachment: fixed;
     background-position: center;
     opacity: 20%;
-    z-index: 44;
+    z-index: -4;
     transform: scale(1.1);
 
 } 
@@ -99,7 +131,7 @@ h1 {
     display: grid;
     width: 100%;
     height: 33%;
-    bottom: 0;
+    bottom: 3%;
     margin-top: 10rem;
     background-image: url(images/hockey.webp);
     background-size: cover;
@@ -108,10 +140,11 @@ h1 {
     background-position: center;
     align-items: center;
     border-top: 1px solid none;
-    box-shadow: 0 0 5rem rgba(42, 74, 116, 0.6);
+    box-shadow: inset 0 0 15rem rgba(42, 74, 116, 0.5);
+    box-shadow: outset 0 0 5rem rgba(42, 74, 116, 0.5);
     transform: scale(1.5);
     overflow: hidden;
-    opacity: 75%;
+    opacity: 90%;
     z-index: 6;
 }
 
