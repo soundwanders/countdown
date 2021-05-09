@@ -56,7 +56,7 @@ h1 {
     margin: 1rem;
     font-family: 'Open Sans', 'Helvetica', sans-serif;
     font-size: 48px;
-    opacity: 40%;
+    opacity: 80%;
     text-align: center;
     color: #2596be;
     border: none;
@@ -78,8 +78,9 @@ h1 {
     flex-direction: row;
     flex: 1 0 auto;
     justify-content: center;
+    align-items: center;
     position: absolute;
-    margin: 1rem auto;
+    margin: 10% auto;
     z-index: 12;
 }
 
@@ -103,18 +104,13 @@ h1 {
     -ms-flex: 1 0 auto;
     flex: 1 0 auto;
     flex-grow: 0;
-
-    position: relative;
-    top: 7rem;
-    left: 3rem;
+    justify-content: center;
     min-width: 6rem;
     width: 6rem;
     height: 4rem;
-    justify-content: center;
-    align-content: center;
+    line-height: 4rem;
     margin: 0 1rem;
     padding: 10px 20px;
-    line-height: 4rem;
     font-size: 48px;
     font-family: DSEG7-Classic-Bold, Arial, Helvetica, sans-serif;
     text-align: center;
@@ -214,8 +210,8 @@ h1 {
     justify-content: center;
 
     position: absolute;
+    min-width: 100%;
     height: 33%;
-    width: 100%;
     bottom: 0.5rem;
     margin-top: 10rem;
     background-image: url(images/hockey.webp);
@@ -242,8 +238,8 @@ h1 {
 }
 
 
-/* tablets / landscape mode? */
-@media (min-width: 400px) and (max-width: 1281px) {
+/* tablets / low res desktop */
+@media (min-width: 400px) and (max-width: 1025px) {
 
     h1 {
         margin: 0 auto;
@@ -253,16 +249,17 @@ h1 {
     .clock { 
         top: 2rem;
         left: 3rem;
-        height: 1rem;
         min-width: 3rem;
-        width: 3rem;
+        max-width: 3rem;
+        height: 1rem;
         margin: 0 1rem;
         padding: 10px 20px;
         line-height: 1rem;
         font-size: 18px;
-    }}
+    }
+}
 
-/* mobile screens */
+/* mobile */
 @media (min-width: 320px) and (max-width: 961px) {
 
     h1 {
@@ -270,14 +267,13 @@ h1 {
         font-size: 18px;
     }
 
-
     .clock { 
         top: 1.5rem;
         left: 2rem;
-        height: 1rem;
         min-width: 1rem;
         width: 1rem;
-        margin: 0 0.5rem;
+        height: 1rem;
+        margin: 0 1rem;
         padding: 10px 20px;
         line-height: 1rem;
         font-size: 18px;
@@ -287,4 +283,5 @@ h1 {
         top: 2rem;
         right: 0.5rem;
     }
+
 }
