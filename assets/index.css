@@ -17,7 +17,7 @@ body {
     z-index: -100;
 }
 
-#clockWrapper {
+#wrapper {
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -131,6 +131,8 @@ h1 {
     z-index: 12;
 }
 
+
+/*
 .labels {
     display: -webkit-box;
     display: -moz-box;
@@ -171,6 +173,7 @@ h1 {
     left: 29.5rem;
 }
 
+*/
 
 #logoContainer {
     position: absolute;
