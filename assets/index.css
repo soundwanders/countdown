@@ -21,6 +21,7 @@ body {
     background-size: contain;
     background-attachment: fixed;
     margin: 0;
+    overflow: hidden;
     z-index: -100;
 }
 
@@ -40,9 +41,8 @@ body {
 h1 {
     position: absolute;
     margin-top: 3rem;
-    margin-bottom: 1rem;
     font-family: 'Bungee', 'Open Sans', 'Helvetica', sans-serif;
-    font-size: 88px;
+    font-size: 64px;
     opacity: 80%;
     text-align: center;
     letter-spacing: 0.3rem;
@@ -93,18 +93,18 @@ h1 {
     flex: 1 0 auto;
     flex-grow: 0;
     justify-content: center;
+
     min-width: 6rem;
     width: 6rem;
     height: 4rem;
     line-height: 4rem;
     margin: 0 3rem;
-    padding: 7% 14%;
+    padding: 2rem 4rem;
     font-family: DSEG7-Classic-Bold, Arial, Helvetica, sans-serif;
-    font-size: 112px;
+    font-size: 72px;
     text-align: center;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
-    
     background-color: rgba(110, 170, 250, 0.1);
     color: #720000;
     border: 1px solid rgba(110, 170, 250, 0.5);
@@ -142,16 +142,15 @@ h1 {
 #logoContainer {
     position: absolute;
     width: 100%;
-    height: 30%;
-    top: 20%;
+    height: 50%;
+    top: 2rem;
     background-image: url(images/avalanche.svg);
     background-size: contain;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     background-position: center;
+    margin: 0;
     opacity: 15%;
-    z-index: -4;
-    transform: scale(1.1);
+    z-index: -12;
 } 
 
 #hockeyContainer {
@@ -159,10 +158,11 @@ h1 {
     min-width: 100%;
     min-height: 40%;
     bottom: 0;
+    background-color:rgba(110, 170, 250, 0.1);
+    z-index: 6;
 }
 
 #hockeyVector{
-    position: absolute;
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -275,11 +275,8 @@ h1 {
         line-height: 1rem;
         font-size: 20px;
     }
-    #logoContainer {
+    /* #logoContainer {
         top: 3rem;
         right: 0.5rem;
-    }
-    #hockeyVector {
-        background-image: url(images/hockeyImage.svg);
-    }
+    } */
 }
