@@ -13,35 +13,53 @@
     <link rel="icon" type="image/ico" href="assets/favicon/favicon.ico">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="assets/index.css"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oxanium:wght@500&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bungee&display=swap">
+
+    <link rel="stylesheet" href="assets/index.css" type="text/css"></script>
+    <link rel="stylesheet" href="assets/animation.css" type="text/css"></script>
 
 </head>
 
-<title>Countdown to NHL Playoffs</title>
+<title>NHL Playoff Countdown</title>
 
 <body>
     <div id="wrapper">
         
-        <h1 id="headline">Countdown to NHL Playoffs</h1>
+        <h1 id="headline">Countdown to NHL Playoffs!</h1>
         <div id="logoContainer"></div>
 
         <div id="clockContainer">
                 <span class="clock" id="days"></span>
+                <span class="colon">:</span>
                 <span class="clock" id="hours"></span>
+                <span class="colon">:</span>
                 <span class="clock" id="minutes"></span>
+                <span class="colon" id="lastColon">:</span>
                 <span class="clock" id="seconds"></span>
         </div>
 
         <div id="bottomContainer">
             <div id="shadow"></div>
+
+            <div id="puckContainer">
+                <!-- hockey pucks for animation -->
+                <div class="hockeyPuck"></div>
+                <div class="hockeyPuck"></div>
+                <div class="hockeyPuck"></div>
+                <div class="hockeyPuck"></div>
+                <div class="hockeyPuck"></div>
+                <div class="hockeyPuck"></div>
+                <div class="hockeyPuck"></div>
+                <div class="hockeyPuck"></div>
+                <div class="hockeyPuck"></div>
+                <div class="hockeyPuck"></div>
+            </div>
         </div>
 
     </div>
 
-    <script src="assets/index.js"></script>
+<script src="assets/index.js"></script>
 </body>
 
 

@@ -11,45 +11,40 @@
     const minutes = document.getElementById("minutes");
     const seconds = document.getElementById("seconds");
 
-        let i = setInterval (function () {
-            let playoffs = "May 25, 2021 19:00:00";
+        let i = setInterval (function setClock () {
+            let playoffs = "May 19, 2021 19:00:00";
             let countdown = new Date(playoffs).getTime();
             let moment = new Date().getTime();
             let timeLeft = countdown - moment;
     
             days.innerText = Math.floor(
-                (timeLeft / oneDay)),
+                (timeLeft / oneDay),
             hours.innerText = Math.floor(
                 (timeLeft % oneDay) / oneHour),
             minutes.innerText = Math.floor(
                 (timeLeft % oneHour) / oneMinute),
             seconds.innerText = Math.floor(
-                (timeLeft % oneMinute) / oneSecond);
+                (timeLeft % oneMinute) / oneSecond));
 
             if (timeLeft < 0) {
                 clearInterval(i);
+
                 let headline = document.getElementById("headline");
                 headline.innerText = "Countdown to 2022 NHL Playoffs!";
 
-                days.innerText = '';
-                hours.innerText = '';
-                minutes.innerText = '';
-                seconds.innerText = '';
-
-
-                playoffs = "April 15, 2022 19:00:00";
-                countdown;
+                nextPlayoffs = "April 15, 2022 19:00:00";
+                nextYear = new Date(nextPlayoffs);
                 moment;
-                timeLeft;
-
-                days.insertBefore = Math.floor(
-                    (timeLeft / oneDay)),
+                timeLeft = nextYear - moment;
+                
+                days.innerText = Math.floor(
+                    (timeLeft / oneDay),
                 hours.innerText = Math.floor(
                     (timeLeft % oneDay) / oneHour),
                 minutes.innerText = Math.floor(
                     (timeLeft % oneHour) / oneMinute),
                 seconds.innerText = Math.floor(
-                    (timeLeft % oneMinute) / oneSecond);
+                    (timeLeft % oneMinute) / oneSecond));
             }
         }, 1000)
 })();
