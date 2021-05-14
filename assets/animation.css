@@ -121,46 +121,6 @@
 .hockeyPuck:nth-child(10)::before, .hockeyPuck:nth-child(10)::after {
     animation-delay: 9751ms;
 }
-.hockeyPuck:nth-child(11) {
-    top: calc(50% - -132px);
-    left: calc(50% - 49px);
-    animation-delay: 15ms;
-}
-.hockeyPuck:nth-child(11)::before, .hockeyPuck:nth-child(11)::after {
-    animation-delay: 15ms;
-}
-.hockeyPuck:nth-child(12) {
-    top: calc(50% - 94px);
-    left: calc(50% - 30px);
-    animation-delay: 9ms;
-}
-.hockeyPuck:nth-child(12)::before, .hockeyPuck:nth-child(12)::after {
-    animation-delay: 9ms;
-}
-.hockeyPuck:nth-child(13) {
-    top: calc(50% - -196px);
-    left: calc(50% - 189px);
-    animation-delay: 9337ms;
-}
-.hockeyPuck:nth-child(13)::before, .hockeyPuck:nth-child(13)::after {
-    animation-delay: 9337ms;
-}
-.hockeyPuck:nth-child(14) {
-    top: calc(50% - 121px);
-    left: calc(50% - 141px);
-    animation-delay: 3504ms;
-}
-.hockeyPuck:nth-child(14)::before, .hockeyPuck:nth-child(14)::after {
-    animation-delay: 3504ms;
-}
-.hockeyPuck:nth-child(15) {
-    top: calc(50% - 21px);
-    left: calc(50% - 212px);
-    animation-delay: 4694ms;
-}
-.hockeyPuck:nth-child(15)::before, .hockeyPuck:nth-child(15)::after {
-    animation-delay: 4694ms;
-}
 
 @keyframes tail {
     0% {
