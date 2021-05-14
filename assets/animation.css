@@ -12,7 +12,7 @@
 .hockeyPuck {
     position: absolute;
     top: 50%;
-    left: 60%;
+    left: 50%;
     height: 6px;
     background: linear-gradient(-45deg,rgb(165, 155, 255), rgba(0, 0, 255, 0));
     border-radius: none;
@@ -26,7 +26,7 @@
     right: 0;
     height: 6px;
     background: linear-gradient(-45deg, rgba(0, 0, 255, 0), rgb(0, 0, 0), rgba(0, 0, 255, 0));
-    transform: translateX(50%) rotateZ(45deg);
+    transform: translateX(50%);
     border-radius: 100%;
     animation: puckShadow 15000ms ease-in-out infinite;
 }
@@ -35,7 +35,7 @@
     position: absolute;
     bottom: calc(50% - 1px);
     right: 0;
-    height: 6px;
+    height: 8px;
     background: linear-gradient(-45deg, rgba(0, 0, 255, 0), rgb(0, 0, 0), rgba(0, 0, 255, 0));
     border-radius: 100%;
     animation: puckShadow 8000ms ease-in-out infinite;
