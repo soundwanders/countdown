@@ -10,7 +10,6 @@ Avalanche maroon #6f253c;
 
 html, body {
     max-width: 100%;
-    max-height: 100%;
     overflow: hidden;
     margin: 0;
 }
@@ -18,12 +17,11 @@ html, body {
 body {
     width: 100%; 
     min-height: 100%;
+    overflow: hidden;
     background: url(images/concrete_seamless.png);
     background-size: contain;
     background-attachment: fixed;
-    padding: 0;
     margin: 0;
-    z-index: -100;
 }
 
 .wrapper {
@@ -73,7 +71,6 @@ h1 {
 }
 
 .clock {
-    display: flex;
     min-width: 6rem;
     max-width: 5rem;
     top: 28%;
@@ -130,14 +127,12 @@ h1 {
 
 .bottomContainer {
     position: absolute;
-    width: 100%;
+    min-width: 100%;
     height: 40%;
     bottom: 0;
-    left: 0;
-    right: 0;
     background-color:rgba(110, 170, 250, 0.2);
     overflow-y: hidden;
-    z-index: -12;
+    z-index: -16;
 }
 
 #goal {
@@ -217,7 +212,7 @@ h1 {
     }
 
     .bottomContainer {
-        height: 20%;
+        max-height: 20%;
     }
 
     #goal {
