@@ -13,10 +13,10 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    height: 6px;
-    background: linear-gradient(-45deg,rgba(40, 40, 65, 0.5), rgba(0, 0, 255, 0));
+    height: 4px;
+    background: linear-gradient(-45deg,rgba(40, 40, 65, 0.4), rgba(0, 0, 255, 0));
     border-radius: none;
-    filter: drop-shadow(0 0 6px rgba(105, 155, 255, 1));
+    filter: drop-shadow(0 0 3px rgba(105, 155, 255, 1));
     animation: tail 8000ms ease-in-out infinite, hockeyPuck 8000ms ease-in-out infinite;
 }
 .hockeyPuck::before {
@@ -24,7 +24,7 @@
     position: absolute;
     bottom: calc(50% - 1px);
     right: 0;
-    height: 6px;
+    height: 4px;
     background: linear-gradient(-45deg, rgba(0, 0, 255, 0), rgb(0, 0, 0), rgba(0, 0, 255, 0));
     transform: translateX(50%);
     border-radius: 100%;
@@ -35,7 +35,7 @@
     position: absolute;
     bottom: calc(50% - 1px);
     right: 0;
-    height: 8px;
+    height: 6px;
     background: linear-gradient(-45deg, rgba(0, 0, 255, 0), rgb(0, 0, 0), rgba(0, 0, 255, 0));
     border-radius: 100%;
     animation: puckShadow 8000ms ease-in-out infinite;
@@ -155,7 +155,7 @@
             transform: translateX(0);
        }
         100% {
-            transform: translateX(36rem);
+            transform: translateX(40rem);
        }
     }
 }
