@@ -31,7 +31,7 @@ body {
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
-    position: static;
+    position: absolute;
     min-width: 100%;
     height: 100%;
     justify-content: center;
@@ -66,11 +66,12 @@ h1 {
     margin-top: 15rem;
     margin-bottom: 1rem;
     margin-left: 1rem;
-    margin-right: 1rem;
+    margin-right: 2rem;
     z-index: 12;
 }
 
 .clock {
+    display: flex;
     min-width: 6rem;
     max-width: 5rem;
     top: 28%;
@@ -96,7 +97,7 @@ h1 {
 .colon {
     position: relative;
     color:#793047;
-    font-size: 94px;
+    font-size: 88px;
     opacity: 80%;
 }
 
@@ -187,16 +188,15 @@ h1 {
     .colon {
         font-size: 38px;
         line-height: 1rem;
-        line-height: 94px;
     }
     #goal {
         transform: scale(0.7);
         margin-top: 5rem;
-        margin-right: 2rem;
+        margin-right: 3rem;
     }
 }
 
-@media (max-width: 768px) and (orientation: landscape) {
+@media (max-width: 992px) and (orientation: landscape) {
     .clockContainer {
         margin-top: 7rem;
     }
@@ -205,10 +205,10 @@ h1 {
         max-width: 5rem;
         height: 2rem;
         margin: 0 auto;
-        padding: 4px 28px;
+        padding: 3px 21px;
         border-radius: 2px 14px;
-        line-height: 2rem;
         font-size: 28px;
+        line-height: 28px;
     }
     #goal {
         margin-right: 5rem;
