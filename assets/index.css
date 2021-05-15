@@ -10,6 +10,7 @@ Avalanche maroon #6f253c;
 
 html, body {
     max-width: 100%;
+    max-height: 100%;
     overflow: hidden;
     margin: 0;
 }
@@ -33,7 +34,7 @@ body {
     display: flex;
     position: absolute;
     min-width: 100%;
-    height: 100%;
+    min-height: 100%;
     justify-content: center;
     margin: 0 auto;
     overflow: hidden;
@@ -96,15 +97,14 @@ h1 {
 
 .colon {
     position: relative;
-    color:#793047;
+    color:#6b283d;
     font-size: 88px;
-    opacity: 80%;
+    opacity: 90%;
 }
 
 #lastColon {
     animation: flash 2s linear infinite;
 }
-
     @keyframes flash {
         25% { opacity: 0; }
 
@@ -179,10 +179,10 @@ h1 {
         max-width: 3rem;
         height: 1rem;
         margin: 0 auto;
-        padding: 5px 18px;
+        padding: 8px 14px;
         border-radius: 2px 14px;
         line-height: 1rem;
-        font-size: 20px;
+        font-size: 24px;
         justify-content: center;
     }
     .colon {
@@ -190,13 +190,17 @@ h1 {
         line-height: 1rem;
     }
     #goal {
-        transform: scale(0.7);
+        transform: scale(0.8);
         margin-top: 5rem;
         margin-right: 3rem;
     }
 }
 
-@media (max-width: 992px) and (orientation: landscape) {
+@media (max-width: 768px) and (orientation: landscape) {
+    h1 {
+        margin: 2rem;
+        font-size: 32px;
+    }
     .clockContainer {
         margin-top: 7rem;
     }
@@ -211,6 +215,7 @@ h1 {
         line-height: 28px;
     }
     #goal {
+        margin-top: 5rem;
         margin-right: 5rem;
     }
 }
