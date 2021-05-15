@@ -3,10 +3,10 @@
 <html>
 
 <head>
-    <meta name="viewport" content="width=content-width, height=content-height, initial-scale=1.0">
+    <meta name="viewport" content="width=content-width, height=device-height, initial-scale=1.0">
     <meta property="title" content="Countdown to NHL Playoffs">
     <meta name="author" content="soundwanders">
-    <meta name="description" content="Counting down to the start of the NHL Playoffs for the Colorado Avalanche.">
+    <meta name="description" content="Countdown to the starting date of the NHL Playoffs for the Colorado Avalanche.">
 
     <link rel="icon" type="image/png" href="assets/favicon/favicon-16x16.png">
     <link rel="icon" type="image/png" href="assets/favicon/favicon-32x32.png">
@@ -24,29 +24,26 @@
 <title>NHL Playoff Countdown</title>
 
 <body>
-    <div id="wrapper">
+    <div class="wrapper">
         
-        <h1 id="headline">Countdown to the NHL Playoffs!</h1>
-        <div id="logoContainer"></div>
+        <h1 id="headline">Countdown to NHL Playoffs!</h1>
+        <div class="logoContainer"></div>
 
-        <div id="clockContainer">
+        <div class="clockContainer">
                 <span class="clock" id="days"></span>
-                <span class="colon">:</span>
+                    <span class="colon">:</span>
                 <span class="clock" id="hours"></span>
-                <span class="colon">:</span>
+                    <span class="colon">:</span>
                 <span class="clock" id="minutes"></span>
-                <span class="colon" id="lastColon">:</span>
+                    <span class="colon" id="lastColon">:</span>
                 <span class="clock" id="seconds"></span>
         </div>
 
-        <div id="bottomContainer">
-            <div id="shadow"></div>
+        <div class="bottomContainer">
+            <div id="goal"><img src="assets/images/hockeyGoal.png"/></div>
 
             <div id="puckContainer">
                 <!-- hockey pucks for animation -->
-                <div class="hockeyPuck"></div>
-                <div class="hockeyPuck"></div>
-                <div class="hockeyPuck"></div>
                 <div class="hockeyPuck"></div>
                 <div class="hockeyPuck"></div>
                 <div class="hockeyPuck"></div>

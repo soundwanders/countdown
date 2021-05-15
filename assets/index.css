@@ -25,7 +25,7 @@ body {
     z-index: -100;
 }
 
-#wrapper {
+.wrapper {
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -33,7 +33,7 @@ body {
     display: flex;
     position: absolute;
     min-width: 100%;
-    min-height: 100%;
+    height: 100%;
     margin: 0 auto;
     overflow: hidden;
     justify-content: center;
@@ -55,12 +55,18 @@ h1 {
     -webkit-font-smoothing: antialiased;
 }
 
-#clockContainer {
+.clockContainer {
     position: relative;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
     justify-content: center;
     margin-top: 15rem;
     margin-bottom: 1rem;
-    white-space: nowrap;
+    margin-left: 1rem;
+    margin-right: 1rem;
     z-index: 12;
 }
 
@@ -80,11 +86,11 @@ h1 {
     background-color: rgba(110, 170, 250, 0.2);
     color: #5d1d31;
     border: 1px solid rgba(110, 170, 250, 0.3);
-    border-bottom: 1px solid rgba(110, 170, 250, 0.5);
+    border-bottom: 1px solid rgba(110, 170, 250, 0.3);
     box-shadow: 0 0 1px #143b91;
     border-radius: 5px 35px;
     outline: none;
-    z-index: 12;
+    z-index: 50;
 }
 
 .colon {
@@ -106,7 +112,7 @@ h1 {
     100% { opacity: 80%; }
 }
 
-#logoContainer {
+.logoContainer {
     position: absolute;
     width: 100%;
     height: 60%;
@@ -120,28 +126,25 @@ h1 {
     z-index: -12;
 }
 
-#bottomContainer {
+.bottomContainer {
     position: absolute;
     min-width: 100%;
     min-height: 40%;
-    max-height: 40%;
+    max-height: 100%;
     bottom: 0;
-    background-color:rgba(110, 170, 250, 0.1);
+    background-color:rgba(110, 170, 250, 0.2);
     z-index: 6;
     overflow-y: hidden;
 }
 
-#shadow {
-    position: absolute;
-    min-width: 100%;
-    min-height: 100%;
-    margin-bottom: 0;
-    border-top: 1px solid none;
-    box-shadow: inset 0 0 15rem rgba(42, 74, 116, 0.3);
-    box-shadow: outset 0 0 5rem rgba(42, 74, 116, 0.3);
-    opacity: 80%;
-    z-index: 6;
-} 
+#goal {
+    position: relative;
+    float: right;
+    margin-right: 15rem;
+    margin-top: 7rem;
+    margin-bottom: 3rem;
+    z-index: 50;
+}
 
 /* 
 #cup {
@@ -158,11 +161,11 @@ h1 {
 
 @media only screen and (max-width: 992px) {
     h1 {
-        margin: 2rem auto;
-        font-size: 28px;
+        margin: 2rem;
+        font-size: 26px;
     }
-    #clockContainer {
-        margin-top: 10rem;
+    .clockContainer {
+        margin-top: 13rem;
         margin-bottom: 1rem;
         margin-left: 1rem;
         margin-right: 1rem;
@@ -171,9 +174,9 @@ h1 {
         min-width: 3rem;
         max-width: 3rem;
         height: 1rem;
-        margin: 0 1%;
-        padding: 10px 18px;
-        border-radius: 5px 15px;
+        margin: 0 auto;
+        padding: 5px 18px;
+        border-radius: 2px 14px;
         line-height: 1rem;
         font-size: 20px;
         justify-content: center;
@@ -181,5 +184,24 @@ h1 {
     .colon {
         font-size: 44px;
         line-height: 1rem;
+    }
+    #goal {
+        transform: scale(0.6);
+    }
+}
+
+@media (max-width: 768px) and (orientation: landscape) {
+    .clockContainer {
+        margin-top: 8rem;
+    }
+    .clock { 
+        min-width: 5rem;
+        max-width: 5rem;
+        height: 1rem;
+        margin: 0 auto;
+        padding: 4px 28px;
+        border-radius: 2px 14px;
+        line-height: 1rem;
+        font-size: 28px;
     }
 }
