@@ -31,7 +31,7 @@ body {
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
-    position: absolute;
+    position: static;
     min-width: 100%;
     height: 100%;
     justify-content: center;
@@ -96,7 +96,7 @@ h1 {
 .colon {
     position: relative;
     color:#793047;
-    font-size: 88px;
+    font-size: 94px;
     opacity: 80%;
 }
 
@@ -128,12 +128,14 @@ h1 {
 
 .bottomContainer {
     position: absolute;
-    min-width: 100%;
-    min-height: 40%;
+    width: 100%;
+    height: 40%;
     bottom: 0;
+    left: 0;
+    right: 0;
     background-color:rgba(110, 170, 250, 0.2);
     overflow-y: hidden;
-    z-index: -16;
+    z-index: -12;
 }
 
 #goal {
@@ -142,6 +144,7 @@ h1 {
     margin-top: 7rem;
     margin-right: 15rem;
     margin-bottom: 3rem;
+    z-index: 12;
 }
 
 /* 
@@ -180,8 +183,9 @@ h1 {
         justify-content: center;
     }
     .colon {
-        font-size: 40px;
+        font-size: 38px;
         line-height: 1rem;
+        line-height: 94px;
     }
     #goal {
         transform: scale(0.7);
@@ -204,11 +208,7 @@ h1 {
         line-height: 2rem;
         font-size: 28px;
     }
-    .bottomContainer {
-        max-height: 20%;
-    }
     #goal {
-        margin-top: 9rem;
         margin-right: 5rem;
     }
 }

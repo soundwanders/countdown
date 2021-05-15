@@ -5,7 +5,7 @@
     height: 90%;
     float: left;
     transform: rotateZ(45deg);
-    z-index: 10;
+    z-index: 6;
     overflow: hidden;
 }
 
@@ -14,7 +14,7 @@
     top: 50%;
     left: 50%;
     height: 6px;
-    background: linear-gradient(-45deg,rgb(165, 155, 255), rgba(0, 0, 255, 0));
+    background: linear-gradient(-45deg,rgba(40, 40, 65, 0.5), rgba(0, 0, 255, 0));
     border-radius: none;
     filter: drop-shadow(0 0 6px rgba(105, 155, 255, 1));
     animation: tail 8000ms ease-in-out infinite, hockeyPuck 8000ms ease-in-out infinite;
@@ -111,7 +111,7 @@
 }
 @keyframes puckShadow {
     0% {
-        width: 0;
+        width: 1em;
    }
     50% {
         width: 1.27em;
@@ -126,7 +126,7 @@
         transform: translateX(0);
    }
     100% {
-        transform: translateX(150px);
+        transform: translateX(160px);
    }
 }
 
