@@ -1,6 +1,5 @@
 /*
 Avalanche blue #2596be;
-Avalanche maroon #6f253c;
 */
 
 @font-face {
@@ -16,7 +15,7 @@ html, body {
 
 body {
     width: 100%; 
-    min-height: 100%;
+    max-height: 100%;
     overflow: hidden;
     background: url(images/concrete_seamless.png);
     background-size: contain;
@@ -34,7 +33,8 @@ body {
     min-width: 100%;
     height: 100%;
     justify-content: center;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
     overflow: hidden;
 }
 
@@ -121,7 +121,7 @@ h1 {
     background-position: center;
     margin: 0 auto;
     opacity: 20%;
-    z-index: -12;
+    z-index: -20;
 }
 
 .bottomContainer {
@@ -154,18 +154,17 @@ h1 {
     transform: scale(0.2);
     opacity: 30%;
     z-index: 44;
-} 
+}
 */
 
 
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     h1 {
         margin: 2rem;
         font-size: 26px;
     }
     .clockContainer {
         margin-top: 13rem;
-        margin-bottom: 1rem;
         margin-left: 1rem;
         margin-right: 1rem;
     }
@@ -173,10 +172,10 @@ h1 {
         min-width: 3rem;
         max-width: 3rem;
         height: 1rem;
+        line-height: 1rem;
         margin: 0 auto;
         padding: 8px 14px;
         border-radius: 2px 14px;
-        line-height: 1rem;
         font-size: 24px;
         justify-content: center;
     }
@@ -191,25 +190,29 @@ h1 {
     }
 }
 
-@media (max-width: 768px) and (orientation: landscape) {
+@media screen and (max-device-width: 768px) and (orientation: landscape) {
     h1 {
         margin: 2rem;
         font-size: 32px;
     }
     .clockContainer {
         margin-top: 7rem;
+        margin-bottom: 1rem;
     }
-    .clock { 
+    .clock {
+        min-width: 5rem;
+        max-width: 5rem;
         height: 2rem;
         line-height: 2rem;
         margin: 0 auto;
         padding: 3px 21px;
         border-radius: 2px 14px;
-        font-size: 28px;
+        font-size: 32px;
     }
 
     #goal {
         margin-top: 5rem;
         margin-right: 5rem;
+        transform: none;
     }
 }
