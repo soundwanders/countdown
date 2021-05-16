@@ -207,12 +207,15 @@ h1 {
         margin: 0 auto;
         padding: 3px 21px;
         border-radius: 2px 14px;
-        font-size: 32px;
+        font-size: 34px;
     }
-
+    .colon {
+        font-size: 50px;
+        line-height: 2rem;
+    }
     #goal {
-        margin-top: 5rem;
-        margin-right: 5rem;
+        margin-top: 4rem;
+        margin-right: 7rem;
         transform: none;
     }
 }

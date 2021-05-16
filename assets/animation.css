@@ -124,13 +124,13 @@
    }
 }
 
-@media (max-width: 768px) and (orientation: landscape) {
+@media screen and (max-width: 768px) and (orientation: landscape) {
     @keyframes hockeyPuck {
         0% {
             transform: translateX(0);
        }
         100% {
-            transform: translateX(600px);
+            transform: translateX(700px);
        }
     }
   }
