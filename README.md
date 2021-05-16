@@ -2,7 +2,7 @@
 #### Let's Go Avs!
 
 #### Fixes / Ideas
-- animation for empty bottom section (work in progress)
+- ~~animation for empty bottom section~~
 - ~~animate colon between numbers to create the illusion of blinking, like an analog clock~~
 - header improvements. slight animation, shadows, lighting??
-- think about final state of clock containers...could add a glow to help it pop or maybe an animated border?
+- brainstorm improved design for clock number containers
