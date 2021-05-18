@@ -120,7 +120,7 @@
         transform: translateX(0);
    }
     100% {
-        transform: translateX(200px);
+        transform: translateX(220px);
    }
 }
 
@@ -130,7 +130,7 @@
             transform: translateX(0);
        }
         100% {
-            transform: translateX(700px);
+            transform: translateX(800px);
        }
     }
   }
