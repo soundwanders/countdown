@@ -4,7 +4,7 @@ Avalanche blue #2596be;
 
 html, body {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     margin: 0;
     padding: 0;
     overflow: hidden;
@@ -14,9 +14,7 @@ body {
     background: url(images/concrete_seamless.png);
     background-size: contain;
     background-attachment: fixed;
-    position: absolute;
-    top: 0;
-    bottom: 0;
+    overflow-y: hidden;
 }
 
 @font-face {
@@ -166,6 +164,10 @@ h1 {
 
 
 @media screen and (max-width: 768px) {
+    body {
+        max-height: 90%;
+    }
+
     h1 {
         margin: 2rem;
         font-size: 26px;
@@ -186,7 +188,7 @@ h1 {
         justify-content: center;
     }
     #days {
-        padding-right: 16px;
+        padding-right: 18px;
     }
     .colon {
         font-size: 38px;
@@ -218,6 +220,9 @@ h1 {
         padding: 3px 21px;
         border-radius: 2px 14px;
         font-size: 34px;
+    }
+    #days {
+        padding-right: 5rem;
     }
     .colon {
         font-size: 50px;
