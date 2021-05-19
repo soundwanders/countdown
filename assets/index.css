@@ -184,6 +184,9 @@ h1 {
     .bottomContainer {
         bottom: 0;
     }
+    #days {
+        padding-right: 18px;
+    }
     #goal {
         transform: scale(0.8);
         margin-top: 5rem;
