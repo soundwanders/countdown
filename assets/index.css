@@ -182,7 +182,9 @@ h1 {
         line-height: 2rem;
     }
     .bottomContainer {
-        bottom: 0;
+        height: 60%;
+        margin-top: 60%;
+        overflow-y: hidden;
     }
     #days {
         padding-right: 18px;
