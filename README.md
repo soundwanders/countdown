@@ -2,7 +2,7 @@
 #### Let's Go Avs!
 
 #### Fixes / Ideas
-- ~~animation for empty bottom section~~
+- ~~animation for empty bottom section hockey pucks shooting on goal~~
 - ~~animate colon between numbers to create the illusion of blinking, like an analog clock~~
-- header improvements. slight animation, shadows, lighting??
+- header improvements.
 - brainstorm improved design for clock number containers

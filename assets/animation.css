@@ -1,8 +1,8 @@
 
 .puckContainer {
     position: absolute;
-    max-width: 100%;
-    height: 100%;
+    width: 100%;
+    height: 90%;
     float: left;
     bottom: 0;
     transform: rotateZ(45deg);
@@ -13,13 +13,12 @@
 .hockeyPuck {
     position: absolute;
     top: 50%;
-    left: 50%;
     height: 4px;
     margin-top: 5rem;
     background: linear-gradient(-45deg,rgba(40, 40, 65, 0.4), rgba(0, 0, 255, 0));
     border-radius: none;
     filter: drop-shadow(0 0 3px rgba(105, 155, 255, 1));
-    animation: tail 5000ms ease-in-out infinite, hockeyPuck 5000ms ease-in-out infinite;
+    animation: tail 8500ms ease-in-out infinite, hockeyPuck 8500ms ease-in-out infinite;
 }
 .hockeyPuck::before {
     content: '';
@@ -30,7 +29,7 @@
     background: linear-gradient(-45deg, rgba(0, 0, 255, 0), rgb(0, 0, 0), rgba(0, 0, 255, 0));
     transform: translateX(50%);
     border-radius: 100%;
-    animation: puckShadow 5000ms ease-in-out infinite;
+    animation: puckShadow 8000ms ease-in-out infinite;
 }
 .hockeyPuck::after {
     content: '';
@@ -40,54 +39,71 @@
     height: 6px;
     background: linear-gradient(-45deg, rgba(0, 0, 255, 0), rgb(0, 0, 0), rgba(0, 0, 255, 0));
     border-radius: 100%;
-    animation: puckShadow 5000ms ease-in-out infinite;
+    animation: puckShadow 8500ms ease-in-out infinite;
     transform: translateX(50%);
 }
 
 .hockeyPuck:nth-child(1) {
-    top: calc(50% - 42px);
-    left: calc(50% - 86px);
-    animation-delay: 1088ms;
+    top: calc(50% - 40px);
+    left: calc(0% - 85px);
+    animation-delay: 1055ms;
 }
 .hockeyPuck:nth-child(1)::before, .hockeyPuck:nth-child(1)::after {
-    animation-delay: 1088ms;
+    animation-delay: 1055ms;
 }
-
 
 .hockeyPuck:nth-child(2) {
-    top: calc(50% - 84px);
-    left: calc(50% - 120px);
-    animation-delay: 2804ms;
+    top: calc(50% - 85px);
+    left: calc(0% - 220px);
+    animation-delay: 2500ms;
 }
 .hockeyPuck:nth-child(2)::before, .hockeyPuck:nth-child(2)::after {
-    animation-delay: 2804ms;
+    animation-delay: 2500ms;
 }
 
 .hockeyPuck:nth-child(3) {
-    top: calc(50% - 82px);
-    left: calc(50% - 246px);
-    animation-delay: 3088ms;
+    top: calc(50% - 75px);
+    left: calc(0% - 245px);
+    animation-delay: 3000ms;
 }
 .hockeyPuck:nth-child(3)::before, .hockeyPuck:nth-child(3)::after {
-    animation-delay: 3088ms;
+    animation-delay: 3000ms;
 }
 
 .hockeyPuck:nth-child(4) {
-    top: calc(50% - 102px);
-    left: calc(50% - 246px);
-    animation-delay: 4339ms;
+    top: calc(50% - 20px);
+    left: calc(0% - 95px);
+    animation-delay: 6500ms;
 }
 .hockeyPuck:nth-child(4)::before, .hockeyPuck:nth-child(4)::after {
-    animation-delay: 4339ms;
+    animation-delay: 6500ms;
 }
 
 .hockeyPuck:nth-child(5) {
-    top: calc(50% - 131px);
-    left: calc(50% - 126px);
-    animation-delay: 7295ms;
+    top: calc(50% - 130px);
+    left: calc(0% - 145px);
+    animation-delay: 8050ms;
 }
 .hockeyPuck:nth-child(5)::before, .hockeyPuck:nth-child(5)::after {
-    animation-delay: 7295ms;
+    animation-delay: 8050ms;
+}
+
+.hockeyPuck:nth-child(6) {
+    top: calc(50% - 80px);
+    left: calc(0% - 525px);
+    animation-delay: 10000ms;
+}
+.hockeyPuck:nth-child(6)::before, .hockeyPuck:nth-child(5)::after {
+    animation-delay: 10000ms;
+}
+
+.hockeyPuck:nth-child(7) {
+    top: calc(50% - 45px);
+    left: calc(0% - 80px);
+    animation-delay: 11000ms;
+}
+.hockeyPuck:nth-child(7)::before, .hockeyPuck:nth-child(5)::after {
+    animation-delay: 13000ms;
 }
 
 
@@ -130,7 +146,7 @@
             transform: translateX(0);
        }
         100% {
-            transform: translateX(800px);
+            transform: translateX(900px);
        }
     }
   }
@@ -140,16 +156,16 @@
         float: left;
     }
 
-    .hockeyPuck {
-        left: 80%;
-    }
+    /* .hockeyPuck {
+        left: 30%;
+    } */
 
     @keyframes hockeyPuck {
         0% {
             transform: translateX(0);
        }
         100% {
-            transform: translateX(40rem);
+            transform: translateX(93rem);
        }
     }
 }
