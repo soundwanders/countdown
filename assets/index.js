@@ -30,7 +30,7 @@
                 clearInterval(i);
 
                 let headline = document.getElementById("headline");
-                headline.innerText = "Countdown to 2022 NHL Playoffs!";
+                headline.innerText = "Countdown to 2023 NHL Playoffs!";
 
                 playoffs = "April 15, 2023 19:00:00";
                 nextYear = new Date(playoffs);

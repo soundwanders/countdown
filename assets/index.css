@@ -15,6 +15,23 @@ html, body {
     src: url(fonts/DSEG7Classic-Bold.woff);
 }
 
+h1 {
+    position: absolute;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    font-family: 'Bungee', 'Oxanium', 'Helvetica', sans-serif;
+    font-size: 64px;
+    font-display: swap;
+    opacity: 80%;
+    text-align: center;
+    text-decoration: overline underline;
+    letter-spacing: 0.3rem;
+    color: #5d1d31;
+    border: none;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
 .wrapper {
     display: -webkit-box;
     display: -moz-box;
@@ -32,38 +49,6 @@ html, body {
     justify-content: center;
     overflow: hidden;
     z-index: -100;
-}
-
-h1 {
-    position: absolute;
-    margin-top: 3rem;
-    margin-bottom: 1rem;
-    font-family: 'Bungee', 'Oxanium', 'Helvetica', sans-serif;
-    font-size: 64px;
-    font-display: swap;
-    opacity: 90%;
-    text-align: center;
-    letter-spacing: 0.3rem;
-    color: #5d1d31;
-    border: none;
-    text-decoration: overline underline;
-    font-stretch: wider;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-}
-
-.logoContainer {
-    position: absolute;
-    width: 100%;
-    height: 60%;
-    top: 0;
-    background-image: url(images/avalanche.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin: 0 auto;
-    opacity: 30%;
-    z-index: -20;
 }
 
 .clockContainer {
@@ -112,7 +97,7 @@ h1 {
 .colon {
     position: relative;
     color:#6b283d;
-    font-size: 88px;
+    font-size: 90px;
     opacity: 90%;
 }
 
@@ -127,14 +112,28 @@ h1 {
         100% { opacity: 80%; }
     }
 
+.logoContainer {
+    position: absolute;
+    width: 100%;
+    height: 60%;
+    top: 0;
+    background-image: url(images/avalanche.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto;
+    opacity: 30%;
+    z-index: -20;
+}
+
 .bottomContainer {
     position: absolute;
     transform: rotateZ(0deg);
     width: 100%;
     height: 40%;
-    white-space: pre-wrap;
     bottom: 0;
     background-color:rgba(110, 170, 250, 0.2);
+    overflow-y: hidden;
     z-index: -16;
 }
 
@@ -151,10 +150,9 @@ h1 {
 
 
 @media screen and (max-width: 768px) {
-
     h1 {
         margin: 2rem;
-        font-size: 26px;
+        font-size: 36px;
     }
     .clockContainer {
         margin-left: 1rem;
@@ -186,7 +184,6 @@ h1 {
 }
 
 @media screen and (max-width: 768px) and (orientation: landscape) {
-    
     h1 {
         margin: 2rem;
         font-size: 48px;
@@ -221,7 +218,6 @@ h1 {
 
 
 @media screen and (max-device-width: 768px) and (orientation: landscape) {
-    
     h1 {
         margin: 2rem;
         font-size: 32px;
