@@ -46,7 +46,8 @@ h1 {
     letter-spacing: 0.3rem;
     color: #5d1d31;
     border: none;
-    text-decoration: ;
+    text-decoration: overline underline;
+    font-stretch: wider;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
 }
@@ -73,7 +74,6 @@ h1 {
     display: -webkit-flex;
     display: flex;
     justify-content: center;
-    text-align: center;
     margin-top: 15rem;
     margin-bottom: 1rem;
     margin-left: 1rem;
@@ -93,7 +93,6 @@ h1 {
     font-size: 68px;
     font-display: swap;
     text-align: center;
-    text-align: left;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     background-image: repeating-linear-gradient(rgba(110, 170, 250, 0.2), rgba(110, 170, 250, 0.6));
@@ -166,7 +165,7 @@ h1 {
         max-width: 3rem;
         height: 1rem;
         line-height: 1rem;
-        margin: 0 auto;
+        margin: 0 0.5rem;
         padding: 8px 12px;
         border-radius: 2px 14px;
         font-size: 24px;
@@ -199,8 +198,8 @@ h1 {
     .clock {
         min-width: 5rem;
         max-width: 5rem;
-        height: 2rem;
-        line-height: 2rem;
+        height: 3rem;
+        line-height: 3rem;
         margin: 0 auto;
         padding: 3px 21px;
         border-radius: 2px 14px;
@@ -216,6 +215,38 @@ h1 {
     #goal {
         margin-top: 4rem;
         margin-right: 8rem;
+        transform: none;
+    }
+}
+
+
+@media screen and (max-device-width: 768px) and (orientation: landscape) {
+    
+    h1 {
+        margin: 2rem;
+        font-size: 32px;
+    }
+    .clockContainer {
+        margin-top: 7rem;
+        margin-bottom: 1rem;
+    }
+    .clock {
+        min-width: 5rem;
+        max-width: 5rem;
+        height: 2rem;
+        line-height: 2rem;
+        margin: 0 auto;
+        padding: 3px 21px;
+        border-radius: 2px 14px;
+        font-size: 34px;
+    }
+    .colon {
+        font-size: 50px;
+        line-height: 2rem;
+    }
+    #goal {
+        margin-top: 4rem;
+        margin-right: 7rem;
         transform: none;
     }
 }
