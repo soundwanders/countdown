@@ -186,7 +186,8 @@ h1 {
 @media screen and (max-width: 768px) and (orientation: landscape) {
     h1 {
         margin: 2rem;
-        font-size: 48px;
+        font-size: 36px;
+        text-decoration: none;
     }
     .clockContainer {
         margin-top: 7rem;
@@ -217,7 +218,7 @@ h1 {
 @media screen and (max-device-width: 768px) and (orientation: landscape) {
     h1 {
         margin: 2rem;
-        font-size: 32px;
+        font-size: 42px;
     }
     .clockContainer {
         margin-top: 7rem;
