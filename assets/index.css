@@ -206,9 +206,6 @@ h1 {
         font-size: 50px;
         line-height: 2rem;
     }
-    #days {
-        padding-right: 6rem;
-    }
     #goal {
         margin-top: 4rem;
         margin-right: 8rem;
@@ -240,8 +237,11 @@ h1 {
         font-size: 50px;
         line-height: 2rem;
     }
+    #days {
+        padding-right: 28px;
+    }
     #goal {
-        margin-top: 4rem;
+        margin-top: 2rem;
         margin-right: 7rem;
         transform: none;
     }
