@@ -24,7 +24,6 @@ h1 {
     font-display: swap;
     opacity: 80%;
     text-align: center;
-    text-decoration: overline underline;
     letter-spacing: 0.3rem;
     color: #5d1d31;
     border: none;
@@ -187,7 +186,6 @@ h1 {
     h1 {
         margin: 2rem;
         font-size: 36px;
-        text-decoration: none;
     }
     .clockContainer {
         margin-top: 7rem;
