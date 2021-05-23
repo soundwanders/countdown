@@ -40,10 +40,8 @@
         }, 0)
 })();
 
-
-// reset the body height to that of the inner browser
-function resetHeight(){
-    document.body.style.height = window.innerHeight + "px";
-}
-window.addEventListener("resize", resetHeight);
-resetHeight();
+// function resetHeight(){
+//     document.body.style.height = window.innerHeight + "px";
+// }
+// window.addEventListener("resize", resetHeight);
+// resetHeight();

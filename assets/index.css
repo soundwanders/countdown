@@ -121,7 +121,7 @@ h1 {
     background-repeat: no-repeat;
     background-position: center;
     margin: 0 auto;
-    opacity: 30%;
+    opacity: 40%;
     z-index: -20;
 }
 
@@ -151,7 +151,7 @@ h1 {
 @media screen and (max-width: 768px) {
     h1 {
         margin: 2rem;
-        font-size: 36px;
+        font-size: 30px;
     }
     .clockContainer {
         margin-left: 1rem;
@@ -185,7 +185,7 @@ h1 {
 @media screen and (max-width: 768px) and (orientation: landscape) {
     h1 {
         margin: 2rem;
-        font-size: 36px;
+        font-size: 28px;
     }
     .clockContainer {
         margin-top: 7rem;

@@ -82,28 +82,28 @@
 .hockeyPuck:nth-child(5) {
     top: calc(50% - 130px);
     left: calc(0% - 145px);
-    animation-delay: 8050ms;
+    animation-delay: 9050ms;
 }
 .hockeyPuck:nth-child(5)::before, .hockeyPuck:nth-child(5)::after {
-    animation-delay: 8050ms;
+    animation-delay: 9050ms;
 }
 
 .hockeyPuck:nth-child(6) {
     top: calc(50% - 80px);
     left: calc(0% - 525px);
-    animation-delay: 10000ms;
+    animation-delay: 11000ms;
 }
 .hockeyPuck:nth-child(6)::before, .hockeyPuck:nth-child(5)::after {
-    animation-delay: 10000ms;
+    animation-delay: 11000ms;
 }
 
 .hockeyPuck:nth-child(7) {
     top: calc(50% - 45px);
     left: calc(0% - 80px);
-    animation-delay: 11000ms;
+    animation-delay: 15000ms;
 }
 .hockeyPuck:nth-child(7)::before, .hockeyPuck:nth-child(5)::after {
-    animation-delay: 13000ms;
+    animation-delay: 15000ms;
 }
 
 
@@ -164,7 +164,7 @@
             transform: translateX(0);
        }
         100% {
-            transform: translateX(93rem);
+            transform: translateX(91rem);
        }
     }
 }
