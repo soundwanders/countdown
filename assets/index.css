@@ -19,10 +19,10 @@ h1 {
     position: absolute;
     margin-top: 3.3rem;
     margin-bottom: 1rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin-left: auto;
+    margin-right: auto;
     font-family: 'Bungee', 'Oxanium', 'Helvetica', sans-serif;
-    font-size: 72px;
+    font-size: 4.5rem;
     font-display: swap;
     text-align: center;
     text-decoration: none;
@@ -36,11 +36,11 @@ h1 {
 }
 
 .wrapper {
+    display: flex;
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
     display: -webkit-flex;
-    display: flex;
     position: absolute;
     width: 100%;
     height: 100%;
@@ -55,12 +55,13 @@ h1 {
 }
 
 .clockContainer {
+    display: flex;
     position: relative;
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
     display: -webkit-flex;
-    display: flex;
+
     justify-content: center;
     margin-top: 15rem;
     margin-bottom: 1rem;
@@ -75,7 +76,7 @@ h1 {
     top: 28%;
     height: 4rem;
     line-height: 4rem;
-    margin: 0 2rem;
+    margin: 0 auto;
     padding: 2rem 4rem;
     padding-right: 5rem;
     font-family: DSEG7-Classic-Bold, Helvetica, sans-serif;
@@ -104,6 +105,7 @@ h1 {
     font-size: 7rem;
     line-height: 7rem;
     opacity: 90%;
+    margin: 0 1rem;
 }
 
 #lastColon {
@@ -146,7 +148,7 @@ h1 {
     position: relative;
     float: right;
     margin-top: 8rem;
-    margin-right: 20rem;
+    margin-right: 22.5rem;
     margin-bottom: 3rem;
     filter: drop-shadow(0 0 4px rgba(88, 88, 88, 0.8));
     transform: scale(1.7);
@@ -157,7 +159,7 @@ h1 {
 @media screen and (max-width: 640px) and (orientation: portrait) {
     h1 {
         margin: 2rem;
-        font-size: 28px;
+        font-size: 1.75rem;
         text-shadow: none;
     }
     .clockContainer {
@@ -172,15 +174,16 @@ h1 {
         margin: 0 0.5rem;
         padding: 8px 14px;
         border-radius: 2px 14px;
-        font-size: 26px;
+        font-size: 1.625rem;
         justify-content: center;
     }
     .colon {
-        font-size: 38px;
+        font-size: 2.375rem;
         line-height: 2rem;
+        margin: 0 0.125rem;
     }
     #days {
-        padding-right: 18px;
+        padding-right: 1.1rem;
     }
     #goal {
         transform: scale(0.95);
@@ -194,10 +197,23 @@ h1 {
     }  
 }
 
-@media screen and (max-device-width: 768px) and (max-width: 991px) and (orientation: landscape) {
+@media screen and (max-width: 390px) {
+    .colon {
+        margin: 0 0.33rem;
+        font-size: 2rem;
+    }
+    .clock {
+        min-width: 2.5rem;
+        max-width: 2.5rem;
+        font-size: 1.33rem;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 1040px) and (orientation: landscape) {
     h1 {
         margin: 2rem;
-        font-size: 32px;
+        font-size: 2rem;
     }
     .clockContainer {
         margin-top: 7rem;
@@ -209,20 +225,51 @@ h1 {
         height: 2rem;
         line-height: 2rem;
         margin: 0 auto;
-        padding: 5px 23px;
+        padding: 5px 24px;
         border-radius: 2px 14px;
-        font-size: 34px;
+        font-size: 2.125rem;
     }
     .colon {
-        font-size: 50px;
+        font-size: 3rem;
         line-height: 2rem;
+        margin: 1rem;
     }
     #days {
-        padding-right: 28px;
+        padding-right: 1.125rem;
     }
     #goal {
         margin-top: 3rem;
         margin-right: 7rem;
         transform: scale(1.0);
+    }
+}
+
+@media screen and (min-width: 1040px) and (max-width: 1060px) and (orientation: landscape) {
+    h1 {
+        font-size: 2.75rem;
+    }
+    .clockContainer {
+        margin-top: 10rem;
+    }
+    .clock {
+        height: 5rem;
+        min-width: 6rem;
+        line-height: 6rem;
+        margin: 0 auto;
+        padding: 5px 40px;
+        border-radius: 2px 14px;
+        font-size: 3rem;
+    }
+    #days {
+        padding-right: 4rem;
+    }
+    .colon {
+        font-size: 6rem;
+        line-height: 5rem;
+    }
+    #goal {
+        margin-top: 3rem;
+        margin-right: 6.5rem;
+        transform: scale(1.2);
     }
 }
