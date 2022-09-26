@@ -12,7 +12,7 @@
     const seconds = document.getElementById("seconds");
 
         let i = setInterval (function setClock () {
-            let playoffs = "April 15, 2022 19:00:00";
+            let playoffs = "April 15, 2023 19:00:00";
             let countdown = new Date(playoffs).getTime();
             let moment = new Date().getTime();
             let timeLeft = countdown - moment;
